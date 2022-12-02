@@ -1,7 +1,7 @@
-import ClienteSql from './options/sql';
+import ClientSql from './options/sql';
 import {options} from './options/mariaDB';
 
-const sql = new ClienteSql(options)
+const sql = new ClientSql(options)
 
 sql.createTable() 
     .then(() => {

@@ -25,7 +25,7 @@ class ClientSql{
         return this.knex('products').select('*').where('id', id);
     }
 
-    updateProducts(id, article) {
+    updateProducts(id, products) {
         return this.knex('products').where('id', id).update(products)
     }
 
